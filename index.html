@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Universi i Forcave – Eksploro fizikën në mënyrë interaktive</title>
 <meta name="description" content="Platformë edukative interaktive në shqip për të gjitha llojet e forcave: simulime, laborator virtual, lojëra, kuize, kalkulator dhe më shumë.">
-<meta name="author" content="Dean Ramolli, Eneo Kaziu, Erald Hida, Aila Mikeli">
+<meta name="author" content="Dean Ramolli, Eneo Kaziu, Erald Hida">
 <meta name="theme-color" content="#05060f">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1032,7 +1032,7 @@ function initShell() {
   <main id="app"></main>
   <footer><div class="wrap">
    <div class="grid g4" style="text-align:left;margin-bottom:40px">${[['Eksploro', NAV.slice(1, 5)], ['Mëso', NAV.slice(5, 9)], ['Referenca', NAV.slice(9, 14)]].map(([t, l]) => `<div><h4 style="margin-bottom:10px">${t}</h4>${l.map(([u, n, i]) => `<a href="${u}" style="display:block;color:var(--muted);padding:3px 0">${i} ${n}</a>`).join('')}</div>`).join('')}<div><h4 style="margin-bottom:10px">Universi i Forcave</h4><p class="muted" style="font-size:.9rem">Platformë edukative interaktive për të eksploruar fizikën e forcave — me simulime, lojëra dhe kuize.</p></div></div>
-   <div class="credits glass"><h4>PUNUAN:</h4><div class="names"><span>Dean Ramolli</span><i>|</i><span>Eneo Kaziu</span><i>|</i><span>Erald Hida</span><i>|</i><span>Aila Mikeli</span></div></div>
+   <div class="credits glass"><h4>PUNUAN:</h4><div class="names"><span>Dean Ramolli</span><i>|</i><span>Eneo Kaziu</span><i>|</i><span>Erald Hida</span></div></div>
    <p class="muted" style="margin-top:24px;font-size:.8rem">© ${new Date().getFullYear()} UNIVERSI I FORCAVE – Eksploro fizikën në mënyrë interaktive</p>
   </div></footer>`);
   const setIcons = () => { $('#btheme').textContent = Store.get('theme') === 'dark' ? '🌙' : '☀️'; $('#bmute').textContent = Store.get('mute') ? '🔇' : '🔊'; };
